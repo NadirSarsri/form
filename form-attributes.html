@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Attributes</title>
+    <link rel="stylesheet" href="css/form-attributes.css" />
+  </head>
+  <body>
+    <form id="form01" method="get">
+      <div class="form-group">
+        <label for="fname">First name</label>
+        <input
+          type="text"
+          name="fname"
+          id="fname"
+          size="25"
+          maxlength="50"
+          required
+          pattern="[abc]"
+        />
+      </div>
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input
+          type="number"
+          name="age"
+          id="age"
+          required
+          min="10"
+          max="30"
+          step="1"
+        />
+      </div>
+      <div class="form-group">
+        <label for="quantity">Qunatity</label>
+        <span>1</span>
+        <input
+          type="range"
+          name="quantity"
+          id="quantity"
+          required
+          value="1"
+          min="1"
+          max="30"
+          step="1"
+        />
+        <span>30</span>
+      </div>
+      <div class="form-group">
+        <select name="city" required>
+          <option value>Select a city</option>
+          <optgroup label="Rabat-Sale-Kenitra">
+            <option value="rabat">Rabat</option>
+            <option value="sale">Sale</option>
+            <option value="kenitra">Kenitra</option>
+            <option value="temara">Temara</option>
+            <option value="skhirate">Skhirate</option>
+          </optgroup>
+          <optgroup label="Casa-settat">
+            <option value="casablanca">Casa</option>
+            <option value="mohamedia">Mohamadia</option>
+            <option value="mediouna">Mediouna</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="country">Country</label>
+        <input
+          type="text"
+          list="countries"
+          placeholder="Search for a country"
+        />
+        <datalist id="countries">
+          <option value="morocco" />
+          <option value="France" />
+          <option value="Spain" />
+          <option value="Italy" />
+        </datalist>
+      </div>
+    </form>
+
+    <button type="submit" form="form01">Submit</button>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Intro</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <form class="form" method="get">
+      <h3>Exemple</h3>
+      <div class="form-input">
+        <label for="nom">Nom</label>
+        <input
+          class="form-control"
+          id="nom"
+          type="text"
+          name="nom"
+          value="Idrissi"
+        />
+      </div>
+      <div class="form-input">
+        <label for="prenom">Prenom</label>
+        <input id="prenom" class="form-control" type="text" name="prenom" />
+      </div>
+      <div class="form-input">
+        <label for="age">Age</label>
+        <input
+          id="age"
+          class="form-control"
+          type="number"
+          name="age"
+          value="12"
+        />
+      </div>
+      <div class="form-input">
+        <label for="ddr">Date de recrutement</label>
+        <input
+          id="ddr"
+          class="form-control"
+          type="date"
+          name="ddr"
+          value="2023-01-12"
+        />
+      </div>
+      <div class="form-input">
+        <button class="btn btn-primary w-100" type="submit">Envoyer</button>
+      </div>
+    </form>
+  </body>
+</html>

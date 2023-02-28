@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Civil State</title>
+    <link rel="stylesheet" href="css/civilState.css" />
+  </head>
+  <body>
+    <form class="form">
+      <h2>Civil State</h2>
+      <div class="form-input">
+        <label for="firstName" class="form-label">First name</label>
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          class="form-control"
+        />
+      </div>
+      <div class="form-input">
+        <label for="lastName" class="form-label">Last name</label>
+        <input type="text" id="lastName" name="lastName" class="form-control" />
+      </div>
+      <div class="form-input">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" name="email" class="form-control" />
+      </div>
+      <div class="form-input">
+        <label for="birthday" class="form-label">Birthday</label>
+        <input type="date" id="birthday" name="birthday" class="form-control" />
+      </div>
+      <div class="form-input">
+        <label for="photo" class="form-label">Your Photo</label>
+        <input type="file" id="photo" name="photo" />
+      </div>
+      <div class="form-input">
+        <span>Your gender</span>
+        <div class="form-check">
+          <label for="male" class="form-check-label">
+            <input
+              class="form-check-input"
+              id="male"
+              type="radio"
+              name="gender"
+              value="male"
+            />
+            Male</label
+          >
+
+          <label for="female" class="form-check-label">
+            <input
+              class="form-check-input"
+              id="female"
+              type="radio"
+              name="gender"
+              value="male"
+              checked
+            />
+            Female</label
+          >
+        </div>
+      </div>
+      <div class="form-input">
+        <span>Your spoken languages</span>
+        <div class="form-check">
+          <label class="form-check-label" for="english">
+            <input
+              class="form-check-input"
+              id="english"
+              type="checkbox"
+              name="languages"
+              value="english"
+            />
+            English</label
+          >
+
+          <label for="arabic" class="form-check-label">
+            <input
+              class="form-check-input"
+              id="arabic"
+              type="checkbox"
+              name="languages"
+              value="arabic"
+            />
+            Arabic</label
+          >
+
+          <label for="french" class="form-check-label">
+            <input
+              class="form-check-input"
+              id="french"
+              type="checkbox"
+              name="languages"
+              value="french"
+              checked
+            />
+            French
+          </label>
+        </div>
+      </div>
+
+      <div class="form-input">
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
